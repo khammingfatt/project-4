@@ -72,18 +72,66 @@ We went further and break down the important features to classify the two shows 
 <br>
 
 ## Data Dictionary
-| **Feature**         | **Type** | **Dataset**  | **Description**                                                  |
-|---------------------|----------|--------------|------------------------------------------------------------------|
-| **posts**           | object   | sitcom_df    | Combination of the reddit post title & the text in the main post |
-| **subreddit_**      | interger | sitcom_df    | Target feature, where 0 = Big Bang Theory, 1 = Brooklyn Nine Nine|
-| **len_posts**       | interger | sitcom_df    | Number of characters in a post                                   |
-| **post_word_count** | integer  | sitcom_df    | Number of words in a post                                        |
-| **emojis**          | objects  | sitcom_df    | Emojis found in a post                                           |
-| **num_emojis**      | interger | sitcom_df    | Number of emojis found in a post                                 |
-| **neg**             | interger | sitcom_df    | Negative sentiment values                                        |
-| **neu**             | interger | sitcom_df    | Neutral sentiment values                                         |
-| **pos**             | interger | sitcom_df    | Positive sentiment values                                        |
-| **compound**        | interger | sitcom_df    | Compound sentiment values                                        |
+| Feature                   | Type    | Dataset                       | Description                                 |   
+|---------------------------|---------|-------------------------------|---------------------------------------------|
+| year                      | integer | train_merge_df, test_merge_df | Year that the WNV test is performed         |   
+| month                     | integer | train_merge_df, test_merge_df | Month that the WNV test is performed        |   
+| day                       | integer | train_merge_df, test_merge_df | Day of month that the WNV test is performed |   
+| week                      | integer | train_merge_df, test_merge_df | Week that the WNV is performed              |   
+| dayofweek                 | integer | train_merge_df, test_merge_df | Day of week that the WNV is performed       |  
+| dayofyear                 | integer | train_merge_df, test_merge_df | Day of year that the WNV is performed       |   
+| address                   | object  | train_merge_df, test_merge_df | Approximate address of the location of trap. This is used to send to the GeoCoder.  |   
+| species                   | object  | train_merge_df, test_merge_df | Species of mosquitos                        |   
+| block                     | integer | train_merge_df, test_merge_df | Block number                                |   
+| street                    | object  | train_merge_df, test_merge_df | Street name                                 |   
+| trap                      | object  | train_merge_df, test_merge_df | Id of the Mosquito trap                         |   
+| address_number_and_street | object  | train_merge_df, test_merge_df | Address number and street name              |   
+| latitude                  | float   | train_merge_df, test_merge_df | Latitude returned from GeoCoder                   |   
+| longitude                 | float   | train_merge_df, test_merge_df | Longitude returned from GeoCoder            |   
+| address_accuracy          | integer | train_merge_df, test_merge_df | Accuracy returned from GeoCoder      |   
+| wnv_present               | integer | train_merge_df                | Whether West Nile Virus was present in these mosquitos. 1 means WNV is present, and 0 means not present.     |   
+| num_mosquitos             | integer | train_merge_df                | Number of mosquitoes caught in this trap |   
+| station                   | integer | train_merge_df, test_merge_df | Weather station number                     |   
+| stat_1_tmax               | integer | train_merge_df, test_merge_df | Max temperature at Station 1                      |   
+| stat_1_tmin               | integer | train_merge_df, test_merge_df | Min temperature at Station 1             |   
+| stat_1_tavg               | float   | train_merge_df, test_merge_df | Average temperature at Station 1                |   
+| stat_1_precip_total       | float   | train_merge_df, test_merge_df | Total precipitation at Station 1           |   
+| day_length_mprec          | float   | train_merge_df, test_merge_df | Day duration in minutes                      |  
+| day_length_nearh          | float   | train_merge_df, test_merge_df | Day duration in hours             |   
+| sunrise_hours             | float   | train_merge_df, test_merge_df | Sunrise timing in hours                    |   
+| sunset_hours              | float   | train_merge_df, test_merge_df | Sunset timing in hours                     |   
+| yearweek                  | integer | train_merge_df, test_merge_df | Week number of the year                     |   
+| weekpreciptotal           | float   | train_merge_df, test_merge_df | Weekly total precipitation                    |   
+| weekavgtemp               | float   | train_merge_df, test_merge_df | Weekly average temperature                       |   
+| r_humid                   | integer | train_merge_df, test_merge_df | Relative humidity                        |   
+| templag1                  | float   | train_merge_df, test_merge_df | Temperature, lagged by 1 week (brought forward) |   
+| templag2                  | float   | train_merge_df, test_merge_df | Temperature, lagged by 21 weeks (brought forward) |   
+| templag3                  | float   | train_merge_df, test_merge_df | Temperature, lagged by 3 weeks (brought forward) |   
+| templag4                  | float   | train_merge_df, test_merge_df | Temperature, lagged by 4 weeks (brought forward) |   
+| rainlag1                  | float   | train_merge_df, test_merge_df | Rainfall, lagged by 1 week  |   
+| rainlag2                  | float   | train_merge_df, test_merge_df | Rainfall, lagged by 2 weeks  |   
+| rainlag3                  | float   | train_merge_df, test_merge_df | Rainfall, lagged by 3 weeks   |   
+| rainlag4                  | float   | train_merge_df, test_merge_df | Rainfall, lagged by 4 weeks            |   
+| humidlag1                 | float   | train_merge_df, test_merge_df | Relative humidity, lagged by 1 week  |   
+| humidlag2                 | float   | train_merge_df, test_merge_df | Relative humidity, lagged by 2 weeks  |  
+| humidlag3                 | float   | train_merge_df, test_merge_df | Relative humidity, lagged by 3 weeks   |   
+| humidlag4                 | float   | train_merge_df, test_merge_df | Relative humidity, lagged by 4 weeks     |  
+| mixed_tmax                | float   | train_merge_df, test_merge_df | The mean maximum temperature from both weather stations |   
+| mixed_tmin                | float   | train_merge_df, test_merge_df | The mean minimum temperature from both weather stations |   
+| mixed_precip_total        | float   | train_merge_df, test_merge_df | The mean maximum temperature from both weather stations |   
+| mixed_weekpreciptotal     | float   | train_merge_df, test_merge_df | The mean weekly total precipitation from both weather stations |   
+| mixed_weekavgtemp         | float   | train_merge_df, test_merge_df | The mean weekly average temperature from both weather stations  |   
+| mixed_r_humid             | float   | train_merge_df, test_merge_df | The mean relative humidity from both weather stations |   
+| stat_2_tmax               | integer | train_merge_df, test_merge_df | Max temperature at Station 2  |   |
+| stat_2_tmin               | integer | train_merge_df, test_merge_df | Min temperature at Station 2   |   
+| stat_2_tavg               | float   | train_merge_df, test_merge_df | Average temperature at Station 2    | 
+| stat_2_precip_total       | float   | train_merge_df, test_merge_df | Total precipitation at Station 2      |  
+| id                        | integer | test_merge_df                 | The ID of the record                        |  
+| Date |datetime |spray_df|  Date of the spray|
+| Time |object|spray_df| Time of the spray|
+| Latitude|float|spray_df| Latitude of the spray|
+| Longitude|float|spray_df| Longitude of the spray|
+
 
 
 ---
