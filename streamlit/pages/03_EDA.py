@@ -1,8 +1,6 @@
 import streamlit as st
-import numpy as np
 import pandas as pd
 import plotly.express as px
-import pickle
 
 st.set_page_config(page_title="West Nile Virus Dashboard", page_icon='🦟', layout="wide")
 
@@ -14,8 +12,7 @@ def load_file(filepath):
     pd.read_csv(filepath)
     return pd.read_csv(filepath)
 
-# JASMINE, UPDATE THE FILEPATH HERE!!!!
-df = load_file("./data/train_merge_df.csv")
+df = load_file("./streamlit/data/train_merge_df.csv")
 
 # st.sidebar.title('Data NineNine West Nile Virus')
 # st.sidebar.write('Graph of Monthly total number of mosquitoes caught by year')

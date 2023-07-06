@@ -2,13 +2,9 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-# import folium
-# from streamlit_folium import folium_static
-# import plotly.express as px
-# import plotly.graph_objects as go
-# from pathlib import Path
 import pickle
 import datetime
+import imblearn
 
 #from wnv_historical_data_viz import df (NOT NEEDED)
 
@@ -48,7 +44,7 @@ def get_data(filename):
 
     return df, df_filtered, df_filtered_num, df_filtered_cat
 
-df, df_filtered, df_filtered_num, df_filtered_cat = get_data('./data/train_merge_df.csv')
+df, df_filtered, df_filtered_num, df_filtered_cat = get_data('./streamlit/data/train_merge_df.csv')
 
 
 def get_predictors():
@@ -132,7 +128,7 @@ predictors_df = get_predictors()
 def wnv_predictor(predictors_df):
 
     #st.write(predictors_df)
-    filename = './models/ada_model.pkl'
+    filename = './streamlit/models/ada_model.pkl'
     model1 = pickle.load(open(filename, 'rb'))
 
     # Generate prediction based on user selected attributes

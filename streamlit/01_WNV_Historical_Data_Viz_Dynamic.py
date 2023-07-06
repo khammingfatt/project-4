@@ -1,15 +1,12 @@
 import pandas as pd
 import streamlit as st
 import folium
-import imageio
-import matplotlib.pyplot as plt
-import matplotlib.animation as animation
 from streamlit_folium import folium_static
 
 st.set_page_config(page_title="West Nile Virus Dashboard", page_icon='🦟')
 st.title("🌍 Visualizing historical data relating to the West Nile Virus")
 st.write("-- Data Nine Nine Project 4")
-st.markdown("***Map showing weather stations locations, trap locations, number of mosquitos caught in trap, spray data, and whether wnv was presen, for selected date.***")
+st.markdown("***Map showing weather stations locations, trap locations, number of mosquitos caught in trap, spray data, and whether wnv was present, for selected date.***")
 
 # Load the train dataset
 @st.cache_data    
@@ -17,11 +14,11 @@ def load_file(filepath):
     pd.read_csv(filepath)
     return pd.read_csv(filepath)
 
-df = load_file("../assets/train.csv")
+df = load_file("./assets/train.csv")
 
 # Load the spray dataset
 
-spray_df = load_file("../assets/spray.csv")
+spray_df = load_file("./assets/spray.csv")
 
 # Convert date columns to datetime
 df['Date'] = pd.to_datetime(df['Date'])
