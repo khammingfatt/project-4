@@ -1,7 +1,7 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project 3: Unveiling the Recipe for Comedy Success: Analyzing Viewer Preferences and Sentiment towards Popular Sitcoms
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project 4: Data-backed solutions for combating West Nile Virus in Chicago
 
-### **Try Out our B99 vs BBT Classifier Application Streamlit App by clicking the link below.**
-### [Brooklyn's Nine Nine and The Big Bang Theory Classifier and Sentiment Analysis](https://project-3-recipe-for-comedy-success-tj0ysfqfwsi.streamlit.app/)
+<!-- ### **Try Out our B99 vs BBT Classifier Application Streamlit App by clicking the link below.**
+### [Brooklyn's Nine Nine and The Big Bang Theory Classifier and Sentiment Analysis](https://project-3-recipe-for-comedy-success-tj0ysfqfwsi.streamlit.app/) -->
 
 <br>
 
@@ -12,41 +12,39 @@
 <br>
 
 ## Content Directory:
-### Contents:
 - [Background](#Background)
 - [Data Import & Cleaning](#Data-Import-&-Cleaning)
-- [Feature Engineering](#Feature-Engineering)
+- [Preprocessing and Feature Engineering](#Preprocessing-and-Feature-Engineering)
 - [Exploratory Data Analysis](#Exploratory-Data-Analysis)
-    - [Sentiment Analysis](#Sentiment-Analysis)
 - [Modeling](#Modeling)
-    - [Fine Tuning of Best Models](#Fine-Tuning-of-Best-Models)
-- [Key Insights & Recommendations](#Key-Insights-&-Recommendations)
-- [Reference](#reference)
+- [Kaggle Submission](#Kaggle-Submission)
+- [Key Insights & Recommendations](#Conclusion)
 
 <br>
 
 
 ## Background
-The streaming services market has witnessed significant growth in recent years, revolutionizing the way people consume entertainment content. With the advent of high-speed internet and advancements in technology, streaming platforms have become increasingly popular, offering a wide range of TV shows, movies, and original content to millions of subscribers worldwide.
+West Nile virus (WNV) is an infectious viral disease transmitted by mosquitoes, which can lead to flu-like symptoms, neurological complications, and potentially fatal illnesses in humans.
 
-Leading the industry is Netflix, with an impressive subscriber base of 223.09 million, followed closely by Prime Video with over 200 million subscribers. These platforms provide extensive libraries of content, personalized recommendations, and user-friendly interfaces to enhance the streaming experience.
+In the year 2002, the initial human cases of West Nile virus were reported in the city of Chicago. Subsequently, the City of Chicago and the **Chicago Department of Public Health (CDPH)** took significant measures to establish a comprehensive surveillance and control program. This program has been diligently maintained and remains in operation to this day. Over the course of 12 years, substantial efforts have been invested in combating the spread of West Nile Virus, resulting in the accumulation of a vast amount of data by the **CDPH**. This rich dataset now serves as a valuable resource for making evidence-based decisions.
 
-Disney+ quickly gained traction after its 2019 launch, amassing 164.2 million subscribers by leveraging Disney's iconic franchises and family-friendly content. HBO Max, backed by WarnerMedia, offers a premium streaming experience with its diverse catalog of original series, blockbuster movies, and exclusive streaming rights.
-
-The competition among these major players reflects the growing demand for on-demand content and the convenience of streaming platforms. As the market evolves, it presents immense opportunities for content creators, production studios, and consumers alike, shaping the future of entertainment consumption.
+Reference Website
+- [Centre for Disease Control and Prevention](https://www.cdc.gov/about/index.html)
+- [Chicago Department of Public Health](https://www.chicago.gov/city/en/depts/cdph.html)
 
 <br>
 
 
 ## Problem Statement
-Netflix aims to optimize their limited budget by retaining the most popular and engaging sitcom for their platform. To make an informed decision, they require an efficient machine learning solution that can accurately classify and analyze user comments from various platforms, paricularly two famous sitcom "Big Bang Theory" and "Brooklyn Nine Nine." The goal is to develop an infrastructure that can effectively identify which show the viewers' comments are referring to and analyze the sentiments expressed towards each show. This solution will enable the streaming company to gain valuable insights into viewers' preferences, aiding them in determining the sitcom to retain, maximizing viewer satisfaction and engagement within the budgetary constraints.
+We, **Data Nine-Nine**, have been engaged as a third-party consulting firm by the **Centre for Disease Control and Prevention (CDC)** to collaborate on a comprehensive review of their West Nile virus (WNV) control efforts. Our objective is to
 
-	(1) Identify what show elements in the sitcom are popular among the viewers
+	(1) build machine learning model to predict the presence of WNV; 
 
-	(2) To build an infrastructure that can help to classify and analyse user's comments about the show from various platforms
-
-
+	(2) providing valuable insights and recommendations to further enhance their strategies 
 <br>
+
+in combatting the West Nile virus outbreak.
+
 <br>
 
 ---
