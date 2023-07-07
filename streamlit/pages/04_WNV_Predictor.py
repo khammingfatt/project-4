@@ -72,10 +72,10 @@ def get_predictors():
     # longitude = st.sidebar.slider('Longitude', float(df_filtered['longitude'].min()), float(df_filtered['longitude'].max()),float(df_filtered['longitude'].min()), key='4')
 
     # User input
-    stat_1_tmax = st.sidebar.slider("Temp_max at O'Hare Weather Stn", float(df_filtered['stat_1_tmax'].min()), float(df_filtered['stat_1_tmax'].max()),float(78), step=1.0, key='5')
-    stat_1_tmin = st.sidebar.slider("Temp_min at O'Hare Weather Stn", float(df_filtered['stat_1_tmin'].min()), float(df_filtered['stat_1_tmin'].max()),float(65), step=1.0, key='6')
+    stat_1_tmax = st.sidebar.slider("Temp_max at O'Hare Weather Stn (F)", float(df_filtered['stat_1_tmax'].min()), float(df_filtered['stat_1_tmax'].max()),float(78), step=1.0, key='5')
+    stat_1_tmin = st.sidebar.slider("Temp_min at O'Hare Weather Stn (F)", float(df_filtered['stat_1_tmin'].min()), float(df_filtered['stat_1_tmin'].max()),float(65), step=1.0, key='6')
     stat_1_tavg = (stat_1_tmax + stat_1_tmin)/2
-    stat_1_precip_total = st.sidebar.slider("Precip_total at O'Hare Weather Stn", float(df_filtered['stat_1_precip_total'].min()), float(df_filtered['stat_1_precip_total'].max()),float(df_filtered['stat_1_precip_total'].min()), key='8')
+    stat_1_precip_total = st.sidebar.slider("Precip_total at O'Hare Weather Stn (inches)", float(df_filtered['stat_1_precip_total'].min()), float(df_filtered['stat_1_precip_total'].max()),float(df_filtered['stat_1_precip_total'].min()), key='8')
 
     # User input
     sunrise_time = st.sidebar.time_input('Time of Sunrise', datetime.time(4, 52), step=60)
@@ -100,10 +100,10 @@ def get_predictors():
     # day_length_nearh = st.sidebar.slider('Day Length to Nearest Hour', float(df_filtered['day_length_nearh'].min()), float(df_filtered['day_length_nearh'].max()),float(df_filtered['day_length_nearh'].min()), step=1.0, key='10')
     # sunrise_hours = st.sidebar.slider('Sunrise Hours', float(df_filtered['sunrise_hours'].min()), float(df_filtered['sunrise_hours'].max()),float(df_filtered['sunrise_hours'].min()), step=1.0, key='11')
     # sunset_hours = st.sidebar.slider('Sunset Hours', float(df_filtered['sunset_hours'].min()), float(df_filtered['sunset_hours'].max()),float(df_filtered['sunset_hours'].min()), step=1.0, key='12')
-    stat_2_tmax = st.sidebar.slider('Temp_max at Midway Weather Stn', float(df_filtered['stat_2_tmax'].min()), float(df_filtered['stat_2_tmax'].max()),float(79), step=1.0, key='16')
-    stat_2_tmin = st.sidebar.slider('Temp_min at Midway Weather Stn', float(df_filtered['stat_2_tmin'].min()), float(df_filtered['stat_2_tmin'].max()),float(69), step=1.0, key='17')
+    stat_2_tmax = st.sidebar.slider('Temp_max at Midway Weather Stn (F)', float(df_filtered['stat_2_tmax'].min()), float(df_filtered['stat_2_tmax'].max()),float(79), step=1.0, key='16')
+    stat_2_tmin = st.sidebar.slider('Temp_min at Midway Weather Stn (F)', float(df_filtered['stat_2_tmin'].min()), float(df_filtered['stat_2_tmin'].max()),float(69), step=1.0, key='17')
     stat_2_tavg = (stat_2_tmax + stat_2_tmin)/2
-    stat_2_precip_total = st.sidebar.slider('Precip_total at Midway Weather Stn', float(df_filtered['stat_2_precip_total'].min()), float(df_filtered['stat_2_precip_total'].max()),float(df_filtered['stat_2_precip_total'].min()), key='19')
+    stat_2_precip_total = st.sidebar.slider('Precip_total at Midway Weather Stn (inches)', float(df_filtered['stat_2_precip_total'].min()), float(df_filtered['stat_2_precip_total'].max()),float(df_filtered['stat_2_precip_total'].min()), key='19')
     mixed_tmax = (stat_1_tmax + stat_2_tmin)/2
     mixed_tmin = (stat_1_tmin + stat_2_tmin)/2
     mixed_precip_total = (stat_1_precip_total + stat_2_precip_total)/2
