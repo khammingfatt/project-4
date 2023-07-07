@@ -17,7 +17,7 @@ st.title('🎯 Are you at risk?')
 st.write("-- Data Nine Nine Project 4")
 
 st.markdown("***Keep yourself safe by predicting the presence of West Nile Virus at a chosen address***")
-
+st.markdown("***Note: your address must exist within our database for the prediction to work!")
 @st.cache_data
 def get_data(filename):
     df = pd.read_csv(filename)
