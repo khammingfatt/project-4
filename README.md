@@ -5,9 +5,9 @@
 
 <br>
 
-| **Brooklyn's Nine Nine** | **The Big Bang Theory**  |
+<!-- | **Brooklyn's Nine Nine** | **The Big Bang Theory**  |
 | ------------------------ | -----------------------  |
-| ![Brooklyn's Nine Nine](https://github.com/khammingfatt/Project-3-Quantifying-TV-Laughter/blob/main/B99_Image.jpg?raw=true)| ![The Big Bang Theory](https://github.com/khammingfatt/Project-3-Quantifying-TV-Laughter/blob/main/BBT_Image.jpg?raw=true) |
+| ![Brooklyn's Nine Nine](https://github.com/khammingfatt/Project-3-Quantifying-TV-Laughter/blob/main/B99_Image.jpg?raw=true)| ![The Big Bang Theory](https://github.com/khammingfatt/Project-3-Quantifying-TV-Laughter/blob/main/BBT_Image.jpg?raw=true) | -->
 
 <br>
 
@@ -47,27 +47,46 @@ in combatting the West Nile virus outbreak.
 
 <br>
 
+## Project Deliverables
+Our project is centered around the following objectives:
+
+1. Conduct comprehensive **research** on the occurrence and prevalence of the West Nile virus in the city of Chicago.
+2. Develop and **train a machine learning model** capable of accurately predicting the probability of the presence of the West Nile virus.
+3. Share our **insights and recommendations** with the esteemed members of the Centers for Disease Control and Prevention (CDC), including biostatisticians and epidemiologists.
+4. Provide a thorough **cost-benefit analysis** to support the CDC members in making informed decisions based on data-driven recommendations for the future.
+
+Project management and planning documentation is done via Github Projects here: https://github.com/users/khammingfatt/projects/1/views/1
+
+<br>
+
 ---
 
 ## Datasets:
-* [`bigbangtheory_hot_full.csv`](../data/bigbangtheory_hot_full.csv): this data contains all of the posts scraped from the subreddit 'r/bigbangtheory' with the 'hot' tag
-* [`brooklynninenine_hot_full.csv`](../data/brooklynninenine_hot_full.csv): this data contains all of the posts scraped from the subreddit 'r/brooklynninenine' with the 'hot' tag
+Public health workers in Chicago setup mosquito traps scattered across the city. The captured mosquitos are tested for the presence of West Nile virus.
+
+* [`train.csv`](../assets/train.csv): The "train.csv" dataset comprises information regarding the geographical coordinates of mosquito traps, the count of mosquitos captured in each trap, and the presence or absence of the West Nile Virus. The dataset encompasses data collected during the years 2007, 2009, 2011, and 2013.
+
+* [`test.csv`](../assets/test.csv): The "test.csv" dataset comprises information regarding the geographical coordinates of mosquito traps and the count of mosquitos captured in each trap. The dataset encompasses data collected during the years 2008, 2010, 2012, and 2014. We are to use test.csv to evaluate the results of machine learning.
+
+* [`spray.csv`](../assets/spray.csv): The spray.csv consists of GIS data for City of Chicago spray efforts in 2011 and 2013. 
+
+* [`weather.csv`](../assets/weather.csv): The weather.csv consists of weather condition data collected by National Oceanic and Atmospheric Administration (NOAA) from year 2007 to 2014.
 
 <br>
 
 ### Brief Description of Our Data Exploration
-Upon studying the datasets, we found out that these are the most important 10 factors that affects the housing price are given as below. Starting from the most important factor, we have floor area per square feet, max floor level and lease commence date.
+
  
-![SHAP Importance of Variables](https://github.com/khammingfatt/Project-3-Quantifying-TV-Laughter/blob/main/SHAP.png?raw=true)
+<!-- ![SHAP Importance of Variables](https://github.com/khammingfatt/Project-3-Quantifying-TV-Laughter/blob/main/SHAP.png?raw=true)
+<br> -->
+
+<!-- We went further and break down the important features to classify the two shows separately and here are the details we get. The more positive the coefficient values, the more likely it is classified to Class 1 - Brooklyn's Nine Nine; On the other hand, the more negative the coefficient values, the more likely it is classified to Class 0 - The Big Bang Theory. -->
+
 <br>
 
-We went further and break down the important features to classify the two shows separately and here are the details we get. The more positive the coefficient values, the more likely it is classified to Class 1 - Brooklyn's Nine Nine; On the other hand, the more negative the coefficient values, the more likely it is classified to Class 0 - The Big Bang Theory.
-
-<br>
-
-| **Brooklyn's Nine Nine** | **The Big Bang Theory**  |
+<!-- | **Brooklyn's Nine Nine** | **The Big Bang Theory**  |
 | ------------------------ | -----------------------  |
-| ![Brooklyn's Nine Nine](https://github.com/khammingfatt/Project-3-Quantifying-TV-Laughter/blob/main/Feature%20Importance%20B99.png?raw=true)| ![The Big Bang Theory](https://github.com/khammingfatt/Project-3-Quantifying-TV-Laughter/blob/main/Feature%20Importance%20BBT.png?raw=true) |
+| ![Brooklyn's Nine Nine](https://github.com/khammingfatt/Project-3-Quantifying-TV-Laughter/blob/main/Feature%20Importance%20B99.png?raw=true)| ![The Big Bang Theory](https://github.com/khammingfatt/Project-3-Quantifying-TV-Laughter/blob/main/Feature%20Importance%20BBT.png?raw=true) | -->
 
 <br>
 
@@ -141,7 +160,7 @@ We went further and break down the important features to classify the two shows 
 
 ## Modeling
 
-In the field of Natural Language Processing (NLP), several techniques are employed to process and analyze textual data. These techniques play a crucial role in extracting meaningful information and insights from text documents. In our project, we applied various NLP techniques to preprocess and analyze the data.
+<!-- In the field of Natural Language Processing (NLP), several techniques are employed to process and analyze textual data. These techniques play a crucial role in extracting meaningful information and insights from text documents. In our project, we applied various NLP techniques to preprocess and analyze the data.
 
 **Tokenization** is the first step in NLP, where a text document is divided into smaller units called tokens. These tokens can be words, sentences, or even subwords, depending on the level of granularity required. By breaking down the text into tokens, we gain a better understanding of the underlying structure and can perform further analysis on individual units.
 
@@ -149,11 +168,11 @@ In the field of Natural Language Processing (NLP), several techniques are employ
 
 **Lemmatization** is a technique used to reduce words to their base or dictionary form, known as the lemma. It helps to standardize words by considering their morphological variations, such as different verb tenses or plural forms. By lemmatizing words, we ensure that similar forms of a word are treated as the same, which aids in effective text analysis and understanding.
 
-Upon finished preprocessing the input, we are ready to deploy our data into **Machine Learning**.
+Upon finished preprocessing the input, we are ready to deploy our data into **Machine Learning**. -->
 
 <br>
 
-![Model Workflow](https://github.com/khammingfatt/Project-3-Recipe-for-Comedy-Success/blob/main/Modeling%20Workflow.png?raw=true)
+<!-- ![Model Workflow](https://github.com/khammingfatt/Project-3-Recipe-for-Comedy-Success/blob/main/Modeling%20Workflow.png?raw=true) -->
 
 
 With reference to the workflow above, we used **vectorization techniques**. Vectorization involves transforming text data into numerical representations that machine learning models can process. One common approach is the **Count Vectorisation Model**, where each word in the text is represented as a separate feature, and the frequency or occurrence of each word is captured. Another approach is **Term Frequency-Inverse Document Frequency (TF-IDF)**, which considers not only the frequency of a word in a document but also its importance in the entire corpus.
@@ -167,11 +186,11 @@ Upon finished running the model, we ran a total of 17 combinations of models wit
 
 ## Summary of Model
 
-|  | Accuracy (Train) | Accuracy (Test) | Cross Validation Score |
-|---|---|---|---|
-| Baseline Model | 0.520833 | 0.520833 | NA |
-| Multinomial(NB) + CountVect + GridSearchCV | 0.97050 | 0.90653 | 0.88123 |  |  |
-| Logistic Regression + TF-IDF + GridSearchCV | 0.97957 | 0.90652 | 0.87368 |  |
+|  | TPR<sup>1</sup> | TNR<sup>2</sup> | ROC(Train) | ROC(Test) | Kaggle<sup>3</sup> |
+|---|---|---|---|---|---|
+| **Logistic Regression <br>(Baseline Model)** | 0.520833 | 0.520833 | NA |
+| **Random Forest Classifier** | 0.97050 | 0.90653 | 0.88123 |  |  |
+| **** | 0.97957 | 0.90652 | 0.87368 |  |
 | **(Best Model)**<br>**Multinomial(NB) + TF-IDF + GridSearchCV** | **0.98865** | **0.92063** | **0.87973** |
 
 ---
