@@ -13,12 +13,9 @@
 
 ## Content Directory:
 - [Background](#Background)
-- [Data Import & Cleaning](#Data-Import-&-Cleaning)
-- [Preprocessing and Feature Engineering](#Preprocessing-and-Feature-Engineering)
 - [Exploratory Data Analysis](#Exploratory-Data-Analysis)
 - [Modeling](#Modeling)
-- [Kaggle Submission](#Kaggle-Submission)
-- [Key Insights & Recommendations](#Conclusion)
+- [Key Recommendations](#Key-Recommendations)
 
 <br>
 
