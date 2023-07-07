@@ -114,7 +114,7 @@ fig2.layout.updatemenus[0].buttons[0].args[1]['transition']['duration'] = 5000
 fig2.update_layout(width = 800)
 
 st.write(fig2)
-st.write('As mentioned, summer months seems to shows most numbers of mosquitos caught. However over the years, the overall number of mosquitoes caught by year does decrease')
+#st.write('As mentioned, summer months seems to shows most numbers of mosquitos caught. However over the years, the overall number of mosquitoes caught by year does decrease')
 
 
 
