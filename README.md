@@ -176,13 +176,13 @@ By employing this systematic approach, we aimed to enhance the quality and relia
 
 ## Summary of Model Perforamance
 
-|  | TPR<sup>1</sup> | TNR<sup>2</sup> | ROC(Train) | ROC(Test) | Kaggle<sup>3</sup> |
-|---|---|---|---|---|---|
-| **Logistic Regression <br>(Baseline Model)** | 0.7802 | 0.7419 | 0.8670 | 0.8269 | 0.7559 |
-| **Random Forest Classifier** | 0.8352 | 0.7069 | 0.8597 | 0.8552 | 0.7334 |
-| **XGBoost Classifier** | 0.1319 | 0.9853 | 0.9238 | 0.8733 | 0.7837 |
-| **AdaBoost Classifier** | **0.7253** | **0.8124** | **0.8259** | **0.8564** | **0.7680** |
-| **Voting Classifier** | 0.6703 | 0.8443 | 0.8987 | 0.8645 | 0.7846 |
+|  | TPR<sup>1</sup> | TNR<sup>2</sup> | ROC(Train) | ROC(Test) |
+|---|---|---|---|---|
+| **Logistic Regression <br>(Baseline Model)** | 0.7802 | 0.7419 | 0.8670 | 0.8269 |
+| **Random Forest Classifier** | 0.8352 | 0.7069 | 0.8597 | 0.8552 |
+| **XGBoost Classifier** | 0.1319 | 0.9853 | 0.9238 | 0.8733 |
+| **AdaBoost Classifier** | **0.7253** | **0.8124** | **0.8259** | **0.8564** |
+| **Voting Classifier** | 0.6703 | 0.8443 | 0.8987 | 0.8645 |
 
 <br>
 1 - True Positive Rate or Sensitivity.
@@ -218,9 +218,13 @@ By employing this systematic approach, we aimed to enhance the quality and relia
 
 ## Key Recommendations
  
-	(1) Create memorable and likable characters to enhance viewer engagement.
-	(2) Utilize the "Cold Open" narrative technique, which is widely discussed by viewers.
-	(3) Incorporate periodic special events within the show to generate anticipation and excitement among viewers. 
+## (1) **Time** your effort
+- May to October: Economist Approach
+- November to April: Minimalist Approach
+
+## (2) **Focus** on culex pipiens populated areas
+
+## (3) **Initiate** localised social media campaign 
 
 <!-- ## Future Work
 	(1) Model can be expanded to Multi-Class Classification
