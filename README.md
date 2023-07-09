@@ -5,9 +5,9 @@
 
 <br>
 
-<!-- | **Brooklyn's Nine Nine** | **The Big Bang Theory**  |
+| **Concerning Numbers** | **Social Cost per Hospitalised Person**  |
 | ------------------------ | -----------------------  |
-| ![Brooklyn's Nine Nine](https://github.com/khammingfatt/Project-3-Quantifying-TV-Laughter/blob/main/B99_Image.jpg?raw=true)| ![The Big Bang Theory](https://github.com/khammingfatt/Project-3-Quantifying-TV-Laughter/blob/main/BBT_Image.jpg?raw=true) | -->
+| ![Concerning Numbers](https://github.com/khammingfatt/project-4-data-backed-solutions-for-combating-wnv-in-chicago/blob/main/Concerning%20Numbers.jpg?raw=true)| ![Social Cost Loss per Person](https://github.com/khammingfatt/project-4-data-backed-solutions-for-combating-wnv-in-chicago/blob/main/Social%20Cost%20Loss%20per%20Person.jpg?raw=true) |
 
 <br>
 
