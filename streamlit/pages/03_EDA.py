@@ -12,7 +12,7 @@ def load_file(filepath):
     pd.read_csv(filepath)
     return pd.read_csv(filepath)
 
-df = load_file("./streamlit/data/train_merge_df.csv")
+df = load_file("data/train_merge_df.csv")
 
 # st.sidebar.title('Data NineNine West Nile Virus')
 # st.sidebar.write('Graph of Monthly total number of mosquitoes caught by year')
