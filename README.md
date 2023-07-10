@@ -1,7 +1,7 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project 4: Data-backed solutions for combating West Nile Virus in Chicago
 
-<!-- ### **Try Out our B99 vs BBT Classifier Application Streamlit App by clicking the link below.**
-### [Brooklyn's Nine Nine and The Big Bang Theory Classifier and Sentiment Analysis](https://project-3-recipe-for-comedy-success-tj0ysfqfwsi.streamlit.app/) -->
+### **Try Out our West Nile Virus Streamlit Application by clicking the link below.**
+# [West Nile Virus Interactive EDA and Predictor](https://west-nile-virus-dashboard-d99.streamlit.app/)
 
 <br>
 
@@ -14,6 +14,7 @@
 ## Content Directory:
 - [Background](#Background)
 - [Exploratory Data Analysis](#Exploratory-Data-Analysis)
+- [Data Preprocessing](#Data-Preprocessing)
 - [Modeling](#Modeling)
 - [Key Recommendations](#Key-Recommendations)
 
@@ -68,22 +69,6 @@ Public health workers in Chicago setup mosquito traps scattered across the city.
 * [`spray.csv`](../assets/spray.csv): The spray.csv consists of GIS data for City of Chicago spray efforts in 2011 and 2013. 
 
 * [`weather.csv`](../assets/weather.csv): The weather.csv consists of weather condition data collected by National Oceanic and Atmospheric Administration (NOAA) from year 2007 to 2014.
-
-<br>
-
-### Brief Description of Our Data Exploration
-
- 
-<!-- ![SHAP Importance of Variables](https://github.com/khammingfatt/Project-3-Quantifying-TV-Laughter/blob/main/SHAP.png?raw=true)
-<br> -->
-
-<!-- We went further and break down the important features to classify the two shows separately and here are the details we get. The more positive the coefficient values, the more likely it is classified to Class 1 - Brooklyn's Nine Nine; On the other hand, the more negative the coefficient values, the more likely it is classified to Class 0 - The Big Bang Theory. -->
-
-<br>
-
-<!-- | **Brooklyn's Nine Nine** | **The Big Bang Theory**  |
-| ------------------------ | -----------------------  |
-| ![Brooklyn's Nine Nine](https://github.com/khammingfatt/Project-3-Quantifying-TV-Laughter/blob/main/Feature%20Importance%20B99.png?raw=true)| ![The Big Bang Theory](https://github.com/khammingfatt/Project-3-Quantifying-TV-Laughter/blob/main/Feature%20Importance%20BBT.png?raw=true) | -->
 
 <br>
 
@@ -155,13 +140,18 @@ Public health workers in Chicago setup mosquito traps scattered across the city.
 <br>
 <br>
 
-## Modeling
+## Data Preprocessing
+![Data Preprocessing](image-1.png)
 
 We followed a rigorous data preprocessing pipeline consisting of three key steps. Firstly, we employed the **One Hot Encoder** technique to convert categorical data into **numerical format**, ensuring compatibility with our models. This transformation allowed us to effectively capture the information contained within the categorical variables.
 
 Next, we applied the **Synthetic Minority Oversampling Technique (SMOTE)** to balance the target class distribution, aiming for a **50:50 ratio**. By oversampling the minority class, we addressed the issue of class imbalance and improved the performance of our models in handling the target variable.
 
 In the final step of data preprocessing, we utilized the **Standard Scaler** method. This process involved transforming all features within the dataset to a **similar scale and distribution**. By doing so, we minimized the potential impact of varying feature magnitudes, allowing our models to better understand the relative importance of different features during the classification process.
+
+## Modeling
+
+![Modeling](image-2.png)
 
 Following the data preprocessing stage, the preprocessed dataset was fed into a pipeline of five classification models: **logistic regression, random forest classifier, XGBoost, Adaboost, and Voting Classifier**. These models were carefully chosen based on their respective strengths and suitability for the classification task at hand. The use of multiple models allowed us to leverage their individual capabilities and ensemble them to make more robust predictions.
 
@@ -193,28 +183,18 @@ By employing this systematic approach, we aimed to enhance the quality and relia
 <br>
 
 
-
-
-<!-- ## Key Insights
-### Overall 
-* Viewers frequently engage in discussions about popular show elements such as Cold Open, Halloween Heist, and potential sequels.
-* Topics that garner significant attention from viewers include their favorite characters and least favorite scenes.
-* Viewers actively discuss sitcom characters in their comments about the shows. 
-
-### Brooklyn's Nine Nine
-* 'Scene' is commonly mentioned in Brooklyn's Nine Nine
-* 'Halloween' and 'Heist' is identified as a very popular topic among reddit users
-* 'Cold Open' is identified as a unique X-factor of B99
-
-### The Big Bang Theory
-* ‘Sheldon’ has very strong impact on viewers in the show
-* 'Season' is commonly mentioned in Big Bang Theory
-* ‘Young’ is seen on BBT very often due to sequel of Young Sheldon -->
-
-
-
 ## Key Recommendations
- 
+
+![Potential Cost Reduction](image.png)
+
+Leveraging the power of machine learning, we have developed an advanced predictive model to effectively combat the West Nile Virus. This innovative approach enables us to significantly reduce costs by an impressive 78.5%. We invite you to delve into the comprehensive details of our proposal outlined below, which showcase the technical prowess and formal methodologies employed in our solution.
+
+| **Proposal** | **Proposal Evaluation**  |
+| ------------------------ | -----------------------  |
+|![Alt text](image-3.png)|![Alt text](image-4.png) |
+
+<br>
+
 ## (1) **Time** your effort
 - May to October: Economist Approach
 - November to April: Minimalist Approach
@@ -223,35 +203,18 @@ By employing this systematic approach, we aimed to enhance the quality and relia
 
 ## (3) **Initiate** localised social media campaign 
 
-<!-- ## Future Work
-	(1) Model can be expanded to Multi-Class Classification
-	(2) Further collect text inputs from other sources periodically
-	(3) To analyse further sentiments, we will no longer limit the number of posts to be even -->
 
 ---
-<!-- ## Reference
-(1) The source of data for comments and posts for Brooklyn's Nine Nine <br>
-https://www.reddit.com/r/brooklynninenine/
+## Reference
+(1) Center for Disease Control and Prevention <br>
+https://www.cdc.gov/westnile/statsmaps/historic-data.html
 
-(2) The source of data for comments and posts for The Big Bang Theory <br> https://www.reddit.com/r/bigbangtheory/
+(2) VDCI Mosquito Management <br> 
+https://www.vdci.net/
 
-(3) Preferred digital video content by genre in the U.S. as of March 2023
-<br> https://www.statista.com/forecasts/997166/preferred-digital-video-content-by-genre-in-the-us#:~:text=%22Comedies%22%20and%20%22Dramas%22,the%20United%20States%2C%20in%202023
+(3) National Library of Medicine
+<br> https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3945683/
 
-(4) Importance of Video Streaming Attributes
-<br> https://www.nielsen.com/insights/2020/playback-time-which-consumer-attitudes-will-shape-the-streaming-wars/
+(4) American Society of Tropical Medicine
+<br> https://astmhpressroom.wordpress.com/journal/february-2014/
 
-(5) Reasons for Subcribing to Additional Paid Video Streaming Services
-<br>  https://www.nielsen.com/insights/2020/playback-time-which-consumer-attitudes-will-shape-the-streaming-wars/
-
-(6) Most Attractive Features of Video Streaming Service
-<br> https://www.cloudwards.net/streaming-services-statistics/
-
-(7) Top Reasons to Subscribe to a New Streaming Service
-<br> https://www.cloudwards.net/streaming-services-statistics/
-
-(8) Streaming Industry Digital Market Share
-<br> https://www.similarweb.com/blog/insights/media-entertainment-news/streaming-q1-2023/#:~:text=The%20streaming%20industry%20has%20shown,in%20a%20post%2Dpandemic%20world
-
-(9) Singaporeans Asked if They Would Discontinue Their Current Streaming Services in The Next 6 Months.
-<br> https://blackbox.com.sg/everyone/streaming-services-in-singapore -->
